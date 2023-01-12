@@ -6,6 +6,7 @@ import 'package:npd_traffic_count_app/functioning_screens/profile.dart';
 import 'package:npd_traffic_count_app/functioning_screens/report.dart';
 import 'package:npd_traffic_count_app/functioning_screens/traffic_counting.dart';
 import 'Auth_screens/splash_screen.dart';
+import 'package:npd_traffic_count_app/Auth_screens/signup.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 void main() {
   runApp(const NpdApp());
@@ -31,6 +32,23 @@ class NpdApp extends StatelessWidget {
           ),
         
         home: SplashScreen(),
+
+        // the routes to navigate through the app
+  
+
+        routes: {
+
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegisterScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/counting': (context) => const Traffic_Count(),
+        '/profile':(context) => const Profile_Screen(),
+        '/report' :(context) => const Report_Screen()
+
+        
+        
+       
+      },
       
     );
       
